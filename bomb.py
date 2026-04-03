@@ -1,8 +1,6 @@
 import base64, sys
 
-# Minimal outer check - no exits unless traced
 if sys.gettrace() is not None:
-    # Silent failure for wiretap
     sys.exit(0)
 
 _b64 = ""
